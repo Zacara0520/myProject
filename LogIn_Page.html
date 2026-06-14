@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인 - 오늘의 추천도서</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="login-page-body">
+
+    <div class="login-container">
+        <h2>로그인</h2>
+        <form id="detailed-login-form">
+            <div class="input-group">
+                <label for="user-id">아이디</label>
+                <input type="text" id="user-id" placeholder="아이디를 입력해 주세요" required>
+                <span class="error-msg" id="err-login-id"></span>
+            </div>
+            <div class="input-group">
+                <label for="user-pw">비밀번호</label>
+                <input type="password" id="user-pw" placeholder="비밀번호를 입력해 주세요" required>
+                <span class="error-msg" id="err-login-pw"></span>
+            </div>
+
+            <div class="captcha-box">
+                <input type="checkbox" id="robot-check">
+                <label for="robot-check">로봇이 아닙니다 (필수)</label>
+            </div>
+            <span class="error-msg" id="err-captcha" style="text-align: left; block-size: auto; margin-top:-10px; margin-bottom:15px;"></span>
+
+            <button type="submit" class="login-btn-full">로그인하기</button>
+        </form>
+
+        <div class="login-footer" style="text-align: center; margin-top: 25px;">
+            <a href="#" onclick="alert('준비 중인 서비스입니다.')">아이디 찾기</a> | 
+            <a href="#" onclick="alert('준비 중인 서비스입니다.')">비밀번호 찾기</a>
+        </div>
+
+        <div style="margin-top: 30px; text-align: center; border-top: 1px solid #eee; padding-top: 20px;">
+            <a href="index.html" style="display: inline-block; padding: 10px 20px; background-color: #f1f3f5; color: #495057; font-size: 0.9rem; font-weight: 500; border-radius: 8px; text-decoration: none; transition: all 0.2s;">
+                ← 메인페이지로 돌아가기
+            </a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

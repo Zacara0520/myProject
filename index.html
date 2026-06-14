@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>홈 - 오늘의 추천도서</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+            <h1>오늘의 추천도서</h1>
+            <div class="search-area">
+                <input type="text" id="main-search" placeholder="검색어를 입력하세요">
+                <button id="search-btn">검색</button>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul style="display: flex; width: 100%;">
+                <li><a href="index.html">홈</a></li>
+                <li><a href="introduce.html">사이트 소개</a></li>
+                <li><a href="storeLink.html">서점 링크</a></li>
+                <li><a href="reviewBoard.html">리뷰 게시판</a></li>
+                
+                <div id="auth-status-area" style="margin-left: auto; display: flex; gap: 25px;">
+                    <li><a href="LogIn.html">회원가입</a></li>
+                    <li><a href="LogIn_Page.html">로그인</a></li>
+                </div>
+                
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container content-wrapper">
+        <main>
+            <section class="intro-section">
+                <h2>어서오세요! 오늘의 추천도서입니다!</h2>
+                <p>이 사이트는 사용자가 다양한 도서를 경험했으면 하는 마음으로 시작되었습니다.</p>
+                <p>이 곳에서 자신만의 도서를 만나보세요!</p>
+            </section>
+            
+            <section class="main-content-area">
+                <h3>오늘의 추천도서 명언</h3>
+                <ul id="quote-list" style="margin-top: 15px; margin-left: 20px; line-height: 2.2; list-style-type: '- ';">
+                    <li>알베르 카뮈 - 《이방인》 "오늘 엄마가 죽었다. 아니 어쩌면 어제."</li>
+                    <li>미겔 데 세르반테스 - 《돈키호테》 "이룩할 수 없는 꿈을 꾸고, 이루어질 수 없는 사랑을 하며..."</li>
+                    <li>마르셀 프루스트 - 《잃어버린 시간을 찾아서》 "행복은 몸에 좋다. 그러나 마음의 힘을 길러주는 것은 슬픔이다."</li>
+                </ul>
+            </section>
+        </main>
+
+        <aside>
+            <div class="widget">
+                <h3>간편 로그인</h3>
+                <form class="login-form" id="easy-login-form">
+                    <input type="text" id="easy-id" placeholder="아이디" required>
+                    <input type="password" id="easy-pw" placeholder="비밀번호" required>
+                    <button type="submit">접속하기</button>
+                    <p style="text-align: center; margin-top: 15px; font-size: 0.85rem;">
+                        <a href="LogIn_Page.html" style="color: #9575cd; font-weight: bold;">상세 로그인 페이지로 이동</a>
+                    </p>
+                </form>
+            </div>
+            <div class="widget">
+                <h3>광고 - 이벤트</h3>
+                <div class="ad-banner" id="rolling-banner">5월 1달동안 문학 도서 10% 할인</div>
+            </div>
+        </aside>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 today books. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
